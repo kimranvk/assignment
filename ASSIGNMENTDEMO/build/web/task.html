@@ -1,0 +1,9 @@
+<label>{{task.title}}</label>
+<p style="vertical-align: top">
+	<small><span>{{task.comments}}</span></small>
+</p>
+<span style="vertical-align:right">
+<span class="glyphicon glyphicon-trash" style="cursor: pointer;" ng-click="remove($index)"></span> &nbsp;
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true" style="cursor: pointer;" ng-click="move($index,'<')"></span>&nbsp;
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="cursor: pointer;" ng-click="move($index,'>')"></span>
+</span>
